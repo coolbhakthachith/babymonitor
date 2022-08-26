@@ -5,7 +5,7 @@ status1 = "";
 
 function preload()
 {
-	song= loadSound("1.mp3");
+	song= loadSound("music.mp3");
 }
 
 function setup() {
@@ -34,7 +34,7 @@ function gotResult(error, results) {
 
 function draw() {
   image(video, 0, 0, 380, 380);
-      if(status1 != "")
+      if(status1 != ""){
       
 r =  random(255);
 g =  random(255);
@@ -62,4 +62,5 @@ for (i = 0; i < objects.length; i++) {
     song.play();
   }
  }
+}
 }
